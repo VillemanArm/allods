@@ -1,5 +1,5 @@
 {
-  "name": "resume",
+  "name": "allods",
   "version": "1.0.0",
   "main": "package.json",
   "scripts": {
@@ -333,5 +333,5 @@
     "yargs": "^7.1.2",
     "yargs-parser": "^5.0.1"
   },
-  "description": ""
+  "description": "test task"
 }
