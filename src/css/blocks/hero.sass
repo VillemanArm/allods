@@ -4,6 +4,9 @@
     position: relative
     z-index: -1
 
+.hero__background-mobile  
+    display: none
+
 .hero__content
     position: absolute
     display: flex
@@ -26,5 +29,29 @@
 .hero__description
     font-size: 2rem
 
-    
+@media (max-width: 768px)  
+    .hero__background
+        height: auto
 
+    .hero__background-desctop  
+        display: none
+
+    .hero__background-mobile  
+        display: block
+
+    .hero__content-logo
+        width: 16rem
+        margin-top: 0.6rem
+        margin-left: 0
+
+    .hero__content-img
+        width: 24rem
+        margin-top: -2.1rem
+        margin-left: 0
+
+    .hero__description
+        font-size: 1.2rem
+        text-align: center
+
+    .hero__header
+        white-space: nowrap
