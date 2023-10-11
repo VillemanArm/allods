@@ -1,5 +1,13 @@
 .about
+    height: 106.5rem
     position: relative
+
+    background-image: url('../img/about/glow.png')
+    background-repeat: no-repeat
+    background-position-y: bottom
+    background-position-x: center
+    background-size: 192rem
+
 
 .about__background
     width: 100%
@@ -7,6 +15,9 @@
     position: relative
     z-index: -1
     top: 3.8rem
+
+.about__background-mobile
+    display: none
 
 .about__content
     width: 100%
@@ -100,3 +111,101 @@
 
     border-radius: 0.7rem
     background-color: #FCFF00
+
+@media (max-width: 768px)  
+    .about
+        height: 105.7rem
+
+        background-size: 80rem
+
+    .about__background
+        width: 100%
+        top: -5rem
+        z-index: -2
+
+    .about__background-desctop
+        display: none
+
+    .about__background-mobile
+        display: block
+
+    .about__content
+        flex-direction: column
+
+    .about__content-img
+        width: 32rem
+        margin-top: 0rem
+        margin-left: 0rem
+
+    .about__content-description
+        margin-left: 0rem
+        padding-top: 2rem
+
+    .about__header
+        text-align: center
+        
+        color:#416DF4
+
+    .about__table
+        padding-bottom: 3rem
+
+    .about__table-head
+        display: flex
+        justify-content: end
+        padding-bottom: 1rem
+
+        & div
+            width: 6.6rem
+            margin-left: 0.8rem
+            padding-top: 0.3rem
+            padding-bottom: 0.3rem
+
+            font-size: 0.9rem
+
+    .about__table-row
+        display: flex
+        height: 5.8rem
+        align-items: center
+        padding-left: 0.4rem
+
+        font-size: 1.2rem
+
+        border: 1px solid #671D00
+
+        &>div:nth-child(1)
+            height: 5.6rem
+            width: 5.6rem
+
+        &>div:nth-child(2)
+            width: 11rem
+            margin-left: 1rem
+            margin-right: 0
+
+        &>div:nth-child(n+3)
+            width: 7rem
+            margin-left: 0
+            text-align: center
+
+        &:not(:last-child)
+            margin-bottom: 0.1rem
+
+    .about__buy
+        justify-content: center
+
+    .about__buy-img
+        width: 12rem
+
+    .about__buy-description
+        margin-left: 3rem
+        padding-bottom: 4.4rem
+
+    .about__buy-price
+        padding-bottom: 2.6rem
+        font-size: 4rem
+
+    .about__buy-button
+        padding: 0.8rem 1.6rem
+
+        font-size: 1.4rem
+
+
